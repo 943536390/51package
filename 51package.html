@@ -12,6 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>文档标题</title>
+	
 </head>
 <body>
 	<!-- header -->
@@ -47,107 +48,155 @@
 	</div>
 
 	<!-- form -->
-	<form name="form" method="post" >
+	<form>
 		<div class="container">
 			<div class="row">
-				<h4 class="form-title col-lg-12">请您按照以下步骤来定制您的纸箱</h4>
+				<h6 class="form-title col-lg-12">请您按照以下步骤来定制您的纸箱</h6>
 			</div>
 			<!-- box-type -->
-			<h5 class="box-title"><span class="bg-box"></span>选择箱型</h5>
+			<h6 class="box-title"><span class="bg-box"></span>选择箱型</h6>
 			<div class="row box box-type">
-				<label class="col-xs-6 col-sm-3 col-md-2 ">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 对口箱 
-				</label>
-				<label class="col-xs-6 col-sm-3 col-md-2">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 飞机盒  
-				</label>
-				<label class="col-xs-6 col-sm-3 col-md-2">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 天地盖    
-				</label>
-
-				<div class="select col-xs-6 col-sm-3 col-md-2 col-md-offset-4">
-					<select>
-					<option>查看详情</option>
-					<option>查看详情</option>
-					<option>查看详情</option>
-				</select>
+				<div class="col-xs-9">
+					<div class="row radio">
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="type" id="duikoubox" value="对口箱" checked> <i></i> 对口箱 
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="type" id="airplanebox"  value="飞机盒"> <i></i>飞机盒  
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="type" id="cap"  value="天地盖"> <i></i>天地盖    
+						</label>
+					</div>	
+				</div>
+				
+				
+				<div class="select col-xs-3">
+					<select name="more-type">
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+					</select>
 				</div>
 				
 			</div>
 			<!-- box-size -->
-			<h5 class="box-title"><span class="bg-Ruler"></span>确定尺寸</h5>
+			<h6 class="box-title"><span class="bg-Ruler"></span>确定尺寸</h6>
 			<div class="row box box-size">
-				<div class="col-xs-6 col-sm-8">
+				<div class="col-xs-9">
 					<div class="row">
-						<label class="col-xs-6 col-sm-3">
-						    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 外径    
+						<label class="col-xs-12 col-sm-3">
+						    <input type="radio" name="size" id="ODiameter"  value="外径"><i></i> 外径    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="length">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="length">
+						    长 <input type="text"> mm    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="width">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="width">
+						    宽 <input type="text"> mm    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="height">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="height">
+						    高 <input type="text"> mm    
 						</label>
 					</div>
 					<div class="row">
-						<label class="col-xs-6 col-sm-3">
-						    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 内径    
+						<label class="col-xs-12 col-sm-3">
+						    <input type="radio" name="size" id="IDiameter"  value="内径"><i></i> 内径    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="length">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="length">
+						    长 <input type="text"> mm    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="width">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="width">
+						    宽 <input type="text"> mm    
 						</label>
-						<label class="col-xs-6 col-sm-3" id="height">
-						    <input type="text"> mm    
+						<label class="col-xs-12 col-sm-3" id="height">
+						    高 <input type="text"> mm    
 						</label>
 					</div>
 				</div>
-				<div class="select col-xs-6 col-sm-2 col-sm-offset-2">
-					<select>
-					<option>查看详情</option>
-					<option>查看详情</option>
-					<option>查看详情</option>
-				</select>
+				<div class="select col-xs-3">
+					<select name="more-size">
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+					</select>
 				</div>
 				
 			</div>
 			<!-- box-material -->
-			<h5 class="box-title"><span class="bg-Scissors"></span>选择材质</h5>
+			<h6 class="box-title"><span class="bg-Scissors"></span>选择材质</h6>
 			<div class="row box box-material">
-				<label class="col-xs-6 col-sm-2 col-md-2 ">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 对口箱 
-				</label>
-				<label class="col-xs-6 col-sm-2 col-md-2">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 飞机盒  
-				</label>
-				<label class="col-xs-6 col-sm-2 col-md-2">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 天地盖    
-				</label>
-				<label class="col-xs-6 col-sm-2 col-md-2 ">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 对口箱 
-				</label>
-				<label class="col-xs-6 col-sm-2 col-md-2 ">
-				    <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 对口箱 
-				</label>
-
-				<div class="select col-xs-6 col-sm-2 col-md-2 col-md-offset-4">
-					<select>
-					<option>查看详情</option>
-					<option>查看详情</option>
-					<option>查看详情</option>
-				</select>
+				<div class="col-xs-9 col-sm-10">
+					<div class="row radio">
+						<label class="col-xs-12 col-sm-4 ">
+						    <input type="radio" name="materia" id="materia1" value="三层A瓦优质" checked> <i></i>三层A瓦优质 
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="materia" id="materia2"  value="三层A瓦优质"> <i></i>三层A瓦优质  
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="materia" id="materia3"  value="三层A瓦优质"> <i></i>三层A瓦优质    
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="materia" id="materia4" value="三层A瓦优质" checked> <i></i>对口箱 
+						</label>
+						<label class="col-xs-12 col-sm-4">
+						    <input type="radio" name="materia" id="materia5" value="三层A瓦优质" checked> <i></i>对口箱 
+						</label>
+					</div>
 				</div>
 				
+				<div class="select col-xs-3 col-sm-2">
+					<select name="more-material">
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+						<option value="查看详情">查看详情</option>
+					</select>
+				</div>		
+			</div>
+
+			<!-- button -->
+			<div class="row">
+				<button class="next col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5" type="button">
+					下一步
+				</button>
 			</div>
 			
+			<!-- 底部内容 -->
+			<div class="row bottom">
+				<div class="name">
+					  51包装网— 纸箱包装首选服务平台  
+				</div>
+				<div class="link">
+					<ol class="breadcrumb">
+					    <li><a href="#">关于我们</a></li>
+					    <li><a href="#">配送流程</a></li>
+					    <li><a href="#">联系我们</a></li>
+					</ol>
+					<ol class="breadcrumb breadcrumb2">
+					    
+					    <li><a href="#">下单指南</a></li>
+					    <li><a href="#">媒体介绍</a></li>
+					    <li style="visibility: hidden;"><a href="#">联系我们</a></li>
+					</ol>
+				</div>
+				<div class="message">
+					<div class="message-wrap">
+						<p>TEL：400-0000-000<br>企业QQ：123456789<br>微信号：XXXXXXX</p>
+						<img src="image/erweima.png">
+					</div>
+					
+				</div>
+			</div>
+
+
 		</div>
 	</form>
 	
+	<!-- footer -->
+	<footer>
+		<span class="Copyright">北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;51baozhuang.com015&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;京icp备99999999-1 </span>
+	</footer>
+
 	
 	
 

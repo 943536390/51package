@@ -119,6 +119,7 @@ header button:focus {
 .form-title {
 	padding:0.03rem 0.05rem;
 	border-left: 4px solid #1d7ad9;
+	font-size: 0.16rem;
 }
 /*box-title*/
 .box-title {
@@ -128,7 +129,7 @@ header button:focus {
 	margin-right: -15px;
 	padding: 0.1rem 0.1rem;
 	background-color: #f3f3f3;
-	font-size: 0.17rem;
+	font-size: 0.15rem;
 	color: #1d7ad9;
 }
 .box-title span {
@@ -156,10 +157,156 @@ header button:focus {
 
 /*box*/
 .box {
+	position: relative;
 	margin: 0.2rem 0.25rem 0.2rem 0.1rem;
 	padding-left: 0;
+	color: #666;
+	font-size: 0.14rem;
+}
+.box label {
+	margin-bottom: 0.1rem;
+}
+.box-size input[type="text"]{
+    width: 30%;
 }
 
+.select {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+/*button*/
+.next {
+	margin-top: 1.5rem;
+	border: none;
+	outline: none;
+	border-radius: 0.03rem;
+	background: #e15053;
+	color: #fff;
+	height: 0.4rem;
+}
+.next:active {
+	background: #c4393c;
+}
+
+/*bottom*/
+.bottom {
+	margin-top: 1rem;
+	font-size: 0.14rem;
+	background: #f9f9f9;
+	color: #999;
+}
+.name {
+	font-weight: 600;
+	margin-top: 0.1rem;
+	margin-bottom: 0.3rem;
+}
+.link .breadcrumb {
+	background: transparent;
+	margin-top: 0.1rem;
+	margin-bottom: 0;
+	padding: 0;
+}
+.link .breadcrumb2 {
+	margin-top: 0;
+	margin-bottom: 0.2rem;
+}
+.link .breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: " ";
+    padding: 0 5px;
+}
+
+.link .breadcrumb a {
+	color: #999;
+	text-decoration: none;
+}
+.link .breadcrumb a:hover {
+	color: #1d7ad9;
+	text-decoration: none;
+}
+
+.message {
+	position: relative;
+	overflow: hidden;
+}
+.message p {
+	float: left;
+	margin-top: 0.1rem;
+}
+.message img {
+	max-width: 100%;
+	float: left;
+}
+
+
+
+/*footer*/
+footer {
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #fff;
+	background: #1d7ad9;
+	height: 0.3rem;
+}
+/*select样式修改*/
+select {
+	position: relative;
+	font-size: 0.14rem;
+	width: auto;
+	padding-left: 2%;
+	padding-right: calc(2% + 24px);
+	margin: 0;
+	height:22px; 
+	line-height:18px;
+	border-radius: 0.02rem;
+	/*很关键：将默认的select选择框样式清除*/
+  	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+
+ 	/* 加箭头*/
+ 	background: url(image/arrow.png) no-repeat right center;
+
+}
+option{
+	text-align:center;
+}
+
+/*radio样式修改*/
+label {
+	position: relative;
+	font-weight: 400;
+}
+input[type="radio"] {
+	display: none;
+}
+label>i {
+	position: absolute;
+	left: -0.1rem;
+	top: 0.01rem;
+	width: 0.18rem;
+	height: 0.18rem;
+	border: 1px solid #acacac;
+	border-radius: 50%;
+}
+label>i:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 0.06rem;
+	height: 0.06rem;
+	background: #fff;
+	border-radius: 50%;
+}
+input[type="radio"]:checked+i {
+	background: #1d7ad9;
+}
 
 
 
@@ -218,6 +365,24 @@ header button:focus {
 		text-align: right;
 	}
 
+	/*bottom*/
+	.bottom {
+		display: flex;
+		justify-content: space-around;
+	}
+	.bottom>div {
+		flex: 1 30%;
+	}
+	.link {
+		text-align: center;
+	}
+	.message {
+		text-align: right;
+	}
+
+	.message-wrap {
+		display: inline-block;
+	}
 
 }
 
